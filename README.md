@@ -1,8 +1,8 @@
 # Data-Structure-and-Algorithms
 
-Objective: Learn the algorithms a dev should know.
+Objective: Learn useful algorithms
 
 Sorts:
 
 1. Merge sort
-2. 
+2. Quick sort
