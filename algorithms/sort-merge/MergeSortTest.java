@@ -3,9 +3,10 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import org.junit.jupiter.api.Test;
 
-public class MergeTest {
+public class MergeSortTest {
 
-    // special cases: empty, increasing, decreasing, with duplicates (non-increasing or non-decreasing), general cases, with negative numbers, stress test approach
+    // special cases: empty, increasing, decreasing, with duplicates (non-increasing or non-decreasing), 
+    // general cases, with negative numbers, stress test approach
 
     @Test
     void testEmptyArray() {
