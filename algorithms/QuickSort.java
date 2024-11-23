@@ -1,3 +1,4 @@
+package algorithms;
 /*
  * Values to the left of a pivot is less than or equal to the pivot. 
  * Values to the right of the pivot is more than or equal to the pivot. 

@@ -1,11 +1,9 @@
+package algorithms;
+
 import java.util.Arrays;
 
 public class MergeSort {
-
-    // techniques: divide and conquer, two pointers
-    // needs analysis and reflection on the techniques
-
-    static void merge(int[] arr, int[] left, int[] right) {
+    private static void merge(int[] arr, int[] left, int[] right) {
         int l = 0, r = 0; // used for array traversal (left[l++] and right[r++])
         int p = 0; // smaller value between left[l] and right[r] is merged into array arr at pivot p (or arr[p])
 
@@ -32,7 +30,7 @@ public class MergeSort {
         }
     }
 
-    static void divide(int[] arr) {
+    private static void divide(int[] arr) {
         if (arr.length < 2)
             return;
 
@@ -50,5 +48,4 @@ public class MergeSort {
     public static void sort(int[] arr) {
         divide(arr);
     }
-
 }
