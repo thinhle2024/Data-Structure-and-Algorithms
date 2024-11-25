@@ -6,4 +6,7 @@ Sorts:
 
 1. Merge sort
 2. Quick sort
-3. Longest Substring without repetition
+
+Searching:
+
+1. Longest Substring without repetition
