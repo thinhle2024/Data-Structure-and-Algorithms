@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class RemoveDuplicatesTest {
 
     @Test
-    void testRemoveDuplicatesSingleElement() {
+    void testRemoveDuplicates1Element() {
         int[] expected = { 0 };
         int[] actual = { 0 };
 
@@ -20,11 +20,11 @@ public class RemoveDuplicatesTest {
     }
 
     @Test
-    void testRemoveDuplicatesDoubleElement21() {
-        int[] expected = { 0, 1 };
-        int[] actual = { 0, 1 };
+    void testRemoveDuplicates2Element1() {
+        int[] expected = { 0, 0 };
+        int[] actual = { 0, 0 };
 
-        int expectedLength = 2;
+        int expectedLength = 1;
         int actualLength = RemoveDuplicates.removeDuplicates(actual);
 
         assertEquals(expectedLength, actualLength, "check the length");
@@ -32,11 +32,11 @@ public class RemoveDuplicatesTest {
     }
 
     @Test
-    void testRemoveDuplicatesDoubleElement22() {
-        int[] expected = { 0, 0 };
-        int[] actual = { 0, 0 };
+    void testRemoveDuplicates2Element2() {
+        int[] expected = { 0, 1 };
+        int[] actual = { 0, 1 };
 
-        int expectedLength = 1;
+        int expectedLength = 2;
         int actualLength = RemoveDuplicates.removeDuplicates(actual);
 
         assertEquals(expectedLength, actualLength, "check the length");

@@ -5,20 +5,18 @@ public class RemoveDuplicates {
     public static int removeDuplicates(int[] nums) { // given nums.length >= 1
         if (nums.length == 1) return 1;
 
-        int leftPointer = 0; // next unique element inserted at this index 
-        int rightPointer = 1; // find the next unique element
+        // int[] expected =    { 0, 1, 2, 3, 4, 2, 2, 3, 3, 4 };
+        // int[] actual =      { 0, 0, 1, 1, 1, 2, 2, 3, 3, 4 };
 
-        while (rightPointer < nums.length) {
+        int insertable = 1;
 
-            if (nums[leftPointer] == nums[rightPointer]) {
-                rightPointer++; // skips all repeating elements
-            } else {
-                nums[++leftPointer] = nums[rightPointer++]; // moves the unique element to its right spot
+        for (int read = 1; read < nums.length; read++) {
+            if (nums[insertable - 1] != nums[read]) {
+                nums[insertable++] = nums[read];
             }
-
         }
 
-        return leftPointer + 1;
+        return insertable;
     }
 
 }
