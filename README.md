@@ -9,4 +9,5 @@ Sorts:
 
 Searching:
 
-1. Longest Substring without repetition
+1. Longest substring without repetition
+2. Remove duplicates (easy)
